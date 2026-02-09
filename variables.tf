@@ -64,11 +64,13 @@ variable "default_threshold" {
   } 
 }
 
+variable "default_datapoints_to_alarm" { default = 1 }
 variable "default_evaluation_periods" { default = 2 }
 variable "default_period" { default = 60 }
 
 variable "threshold" { default = {} }
 
+variable "datapoints_to_alarm" { default = {} }
 variable "evaluation_periods" { default = {} }
 variable "period" { default = {} }
 
